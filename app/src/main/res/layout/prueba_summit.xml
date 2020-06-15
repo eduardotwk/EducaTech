@@ -9,7 +9,7 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wena cabros"
+        android:text="wena cabros22"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="192dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
