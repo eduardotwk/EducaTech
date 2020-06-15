@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:text="PERFIL"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre: Rodrigo"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Apellido : Garces"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="273dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Correo: Rodrigo.garces@twk.cl"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contraseña : ****"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

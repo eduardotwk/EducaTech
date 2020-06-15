@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTENIDO"
+        android:textColor="#070606"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atras"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumas y restas"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contenido"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asignatura"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matematicas"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        app:srcCompat="@android:drawable/sym_contact_card"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        app:srcCompat="@android:drawable/sym_contact_card"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fracciones"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matematicas"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
