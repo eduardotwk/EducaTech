@@ -12,4 +12,11 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+
+    //MENSAJES STRING LOGIN
+    <string name="string_msg_datos">Ingrese datos de acceso</string>
+    <string name="string_msg_rut">Ingrese Rut</string>
+    <string name="string_msg_pass">Ingrese Contraseña</string>
+    <string name="string_rut">admin</string>
+    <string name="string_password">1234</string>
 </resources>
