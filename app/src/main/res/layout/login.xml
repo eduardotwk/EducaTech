@@ -32,6 +32,22 @@
         android:layout_height="wrap_content"
         android:text="Aceptar"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteY="361dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alumno"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profesor"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="302dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
