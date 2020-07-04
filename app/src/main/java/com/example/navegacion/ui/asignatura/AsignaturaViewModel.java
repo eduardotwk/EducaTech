@@ -1,16 +1,16 @@
-package com.example.navegacion.ui.home;
+package com.example.navegacion.ui.asignatura;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class AsignaturaViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public AsignaturaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("CHUPALO KAROL DANCE");
+        mText.setValue("Aquí van las asignaturas..");
     }
 
     public LiveData<String> getText() {
