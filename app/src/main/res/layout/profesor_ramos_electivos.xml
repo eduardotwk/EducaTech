@@ -12,8 +12,12 @@
         android:text="Hora"
         android:textColor="#000000"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/textView16"
@@ -22,8 +26,12 @@
         android:text="Electivo"
         android:textColor="#000000"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/textView12"
@@ -31,8 +39,12 @@
         android:layout_height="wrap_content"
         android:text="16:00 - 18:00"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <TextView
         android:id="@+id/textView9"
@@ -40,16 +52,24 @@
         android:layout_height="wrap_content"
         android:text="A - 51"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Atras"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,8 +77,12 @@
         android:layout_height="wrap_content"
         android:text="Matematico"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
 
     <TextView
         android:id="@+id/textView5"
@@ -66,8 +90,12 @@
         android:layout_height="wrap_content"
         android:text="Cientifico"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/textView7"
@@ -75,8 +103,12 @@
         android:layout_height="wrap_content"
         android:text="A - 1"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
 
     <TextView
         android:id="@+id/textView8"
@@ -84,8 +116,12 @@
         android:layout_height="20dp"
         android:text="B - 52"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
 
     <TextView
         android:id="@+id/textView10"
@@ -93,8 +129,12 @@
         android:layout_height="wrap_content"
         android:text="14:00 - 16:00"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
 
     <TextView
         android:id="@+id/textView11"
@@ -102,8 +142,12 @@
         android:layout_height="wrap_content"
         android:text="10:00 - 11:30"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
 
     <TextView
         android:id="@+id/textView13"
@@ -111,8 +155,12 @@
         android:layout_height="wrap_content"
         android:text="Martes"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="208dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
 
     <TextView
         android:id="@+id/textView14"
@@ -120,8 +168,12 @@
         android:layout_height="wrap_content"
         android:text="Jueves"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
 
     <TextView
         android:id="@+id/textView15"
@@ -129,8 +181,12 @@
         android:layout_height="wrap_content"
         android:text="Jueves"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <TextView
         android:id="@+id/textView17"
@@ -139,8 +195,12 @@
         android:text="Curso"
         android:textColor="#000000"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/textView19"
@@ -149,8 +209,12 @@
         android:text="Dia"
         android:textColor="#000000"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/textView2"
@@ -158,18 +222,24 @@
         android:layout_height="wrap_content"
         android:text="Cientifico"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="RAMOS ELECTIVOS"
         android:textColor="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
 </androidx.constraintlayout.widget.ConstraintLayout>

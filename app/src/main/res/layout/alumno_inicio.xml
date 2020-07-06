@@ -10,7 +10,7 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/editText13"
@@ -128,8 +128,12 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:text="Ver"
-            tools:layout_editor_absoluteX="272dp"
-            tools:layout_editor_absoluteY="483dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.709" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
