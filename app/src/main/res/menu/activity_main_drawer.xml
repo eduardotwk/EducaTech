@@ -6,19 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Mis asignaturas" />
-        <item
-            android:id="@+id/nav_home"
-            android:title="Mis ramos electivos" />
+            android:title="Home" />
+
         <item
             android:id="@+id/nav_gallery"
             android:title="Agendar pruebas" />
+
         <item
-            android:id="@+id/nav_gallery"
-            android:title="Agregar contenido" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:title="Mi perfil" />
+            android:id="@+id/nav_asignatura"
+            android:title="Mis asignaturas" />
 
     </group>
 </menu>
