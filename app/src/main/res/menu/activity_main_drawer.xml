@@ -6,15 +6,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Home" />
+            android:title="Mis Contenidos" />
 
         <item
-            android:id="@+id/nav_gallery"
-            android:title="Agendar pruebas" />
+        android:id="@+id/nav_gallery"
+        android:title="Mis Asignaturas" />
 
         <item
-            android:id="@+id/nav_asignatura"
-            android:title="Mis asignaturas" />
+            android:id="@+id/electivoFragment"
+            android:title="Mis Electivos" />
+
+        <item
+            android:id="@+id/agendarPruebaFragment"
+            android:title="Agendar Pruebas" />
+
+        <item
+            android:id="@+id/perfilFragment"
+            android:title="Mi Perfil" />
+
+
+
 
     </group>
 </menu>

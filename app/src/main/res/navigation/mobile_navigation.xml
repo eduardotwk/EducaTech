@@ -11,13 +11,6 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
     </fragment>
-    <fragment
-        android:id="@+id/nav_asignatura"
-        android:name="com.example.navegacion.ui.asignatura.AsignaturaFragment"
-        android:label="@string/menu_asignatura"
-        tools:layout="@layout/profesor_asignaturas">
-    </fragment>
-
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -26,8 +19,19 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.navegacion.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/electivoFragment"
+        android:name="com.example.navegacion.ElectivoFragment"
+        android:label="@string/fragment_electivo"
+        tools:layout="@layout/fragment_electivo" />
+    <fragment
+        android:id="@+id/agendarPruebaFragment"
+        android:name="com.example.navegacion.AgendarPruebaFragment"
+        android:label="@string/fragment_agendar_prueba"
+        tools:layout="@layout/fragment_agendar_prueba" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.navegacion.PerfilFragment"
+        android:label="@string/fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
 </navigation>
