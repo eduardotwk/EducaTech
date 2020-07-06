@@ -25,8 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         String sPass = ePassword.getText().toString();
         String sMensaje= "";
 
-        //validar ingreso datos
-        if(sRut.isEmpty() && sPass.isEmpty()){ // V^V=V
+
+        if(sRut.isEmpty() && sPass.isEmpty()){
             sMensaje = String.valueOf(R.string.string_msg_datos);
             mensajes(sMensaje);
         }else if(sRut.isEmpty()){
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, R.string.string_msg_pass, Toast.LENGTH_SHORT).show();
         }else{
             //validar datos correctos
-            if(!sRut.toLowerCase().equals(R.string.string_rut)){
+            if(!sRut.equals(R.string.string_rut)){
                 Toast.makeText(this, "Rut Incorrecto", Toast.LENGTH_SHORT).show();
             }else if(!sPass.equals(R.string.string_password)){
                 Toast.makeText(this, "Password Incorrecto", Toast.LENGTH_SHORT).show();
@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 sMensaje = "Login correcto";
                 //Llamando a la función , pasando un parametro
                 mensajes(sMensaje);
-                // https://codeshare.io/218e1j
+
                 Intent pantalla2 = new Intent(this, MainActivity.class);
                 startActivity(pantalla2);
             }
