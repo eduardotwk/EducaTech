@@ -34,14 +34,13 @@ public class LoginActivity extends AppCompatActivity {
         }else if(sPass.isEmpty()){
             Toast.makeText(this, R.string.string_msg_pass, Toast.LENGTH_SHORT).show();
         }else{
-            //validar datos correctos
-            if(!sRut.equals(R.string.string_rut)){
+            if(sRut.equals(R.string.string_rut)){
                 Toast.makeText(this, "Rut Incorrecto", Toast.LENGTH_SHORT).show();
-            }else if(!sPass.equals(R.string.string_password)){
+            }else if(sPass.equals(R.string.string_password)){
                 Toast.makeText(this, "Password Incorrecto", Toast.LENGTH_SHORT).show();
             }else{
                 sMensaje = "Login correcto";
-                //Llamando a la función , pasando un parametro
+
                 mensajes(sMensaje);
 
                 Intent pantalla2 = new Intent(this, MainActivity.class);
@@ -52,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
-    //recibir y mostrar todos los mensajes
+
     public void mensajes(String mensaje){
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
     }
