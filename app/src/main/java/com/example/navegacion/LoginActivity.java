@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import BaseDatos.BaseDatos;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText eRut, ePassword;
+    private RadioButton rProfesor,rAlumno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
 
         eRut = findViewById(R.id.eRut);
         ePassword= findViewById(R.id.ePass);
+        rProfesor = findViewById(R.id.rProfesor);
+        rAlumno = findViewById(R.id.rAlumno);
 
     }
     public void login(View viex){
@@ -46,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 //capturar el check.
                 String check ="";
                 //BASE DE DATOS.
-                this.validarUsuario(sRut,sPass,check);
+                this.validarUsuario(sRut,sPass);
 
             }
 
@@ -58,15 +62,15 @@ public class LoginActivity extends AppCompatActivity {
     public void mensajes(String mensaje){
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
     }
-    public void validarUsuario(String sRut,String sPass,String check){
+    public void validarUsuario(String sRut,String sPass){
         //instancia de la clase qeu hereda de SQLiteOpenHelper, llamando al constructor
-        BaseDatos admin = new BaseDatos(this, "Educatech", null, 1);
+        BaseDatos admin = new BaseDatos(this, "educatech", null, 1);
         //intancia para poder escribir y consuiltar la base de datos
         SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
         String sQuery ="";
-        if (check == "alumno"){
+        if (rAlumno.isChecked() == true){
             sQuery = "select rut from Alumno where rut =" + sRut + " and contrasena =" + sPass;
-        }else{
+        }else if (rProfesor.isChecked() == true){
             sQuery = "select rut from Profesor where rut =" + sRut + " and contrasena =" + sPass;
         }
 
@@ -74,12 +78,14 @@ public class LoginActivity extends AppCompatActivity {
                     (sQuery, null);
             //solo accedo al primer y unico registro
             if(fila.moveToFirst()){
-                if (check == "profesor"){
+                if (rProfesor.isChecked() == true){
                     Intent pantalla2 = new Intent(this, MainActivity.class);
                     startActivity(pantalla2);
-                }else{
-                    Intent pantalla3 = new Intent(this, MainActivity.class);
-                    startActivity(pantalla3);
+                }else if(rAlumno.isChecked() == true){
+                    String sMensaje = "No existe Alumno";
+                    mensajes(sMensaje);
+                    //Intent pantalla3 = new Intent(this, MainActivity.class);
+                    //startActivity(pantalla3);
                 }
             } else {
                 String sMensaje = "No existe el registro";

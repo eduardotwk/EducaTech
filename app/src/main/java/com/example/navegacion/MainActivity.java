@@ -22,17 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
-Spinner ciclos;
+    private Spinner ciclos;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ciclos =  findViewById(R.id.ciclos);
-
-        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.ciclos,android.R.layout.simple_spinner_item);
-        ciclos.setAdapter(adapter);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
