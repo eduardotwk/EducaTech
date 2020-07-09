@@ -5,11 +5,11 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/fragment_profesor_contenido"
             android:title="Mis Contenidos" />
 
         <item
-        android:id="@+id/nav_gallery"
+        android:id="@+id/asignaturasfragment"
         android:title="Mis Asignaturas" />
 
         <item

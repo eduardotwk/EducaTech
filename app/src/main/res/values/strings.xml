@@ -7,11 +7,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Mis Contenidos</string>
-    <string name="menu_gallery">Mis Asignaturas</string>
+    <string name="fragment_profesor_contenido">Mis Contenidos</string>
+    <string name="profesor_fragment_asignaturas">Mis Asignaturas</string>
     <string name="fragment_electivo">Mis Electivos</string>
     <string name="fragment_agendar_prueba">Agendar Prueba</string>
     <string name="fragment_perfil">Mi Perfil</string>
+
+
+    <string name="fragment_alumnos_asignaturas">Mis asignaturas</string>
+    <string name="fragment_alumnos_inicio">Inicio</string>
 
 
     //MENSAJES STRING LOGIN
@@ -23,6 +27,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
 
 
 </resources>

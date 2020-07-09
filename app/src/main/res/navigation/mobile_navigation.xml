@@ -3,35 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/fragment_alumnos_asignaturas">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.navegacion.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-    </fragment>
-
+        android:id="@+id/fragment_alumnos_asignaturas"
+        android:name="com.example.navegacion.fragment_alumnos_asignaturas"
+        android:label="fragment_alumnos_asignaturas"
+        tools:layout="@layout/fragment_alumnos_asignaturas" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.navegacion.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/electivoFragment"
-        android:name="com.example.navegacion.ElectivoFragment"
-        android:label="@string/fragment_electivo"
-        tools:layout="@layout/fragment_electivo" />
-    <fragment
-        android:id="@+id/agendarPruebaFragment"
-        android:name="com.example.navegacion.AgendarPruebaFragment"
-        android:label="@string/fragment_agendar_prueba"
-        tools:layout="@layout/fragment_agendar_prueba" />
-    <fragment
-        android:id="@+id/perfilFragment"
-        android:name="com.example.navegacion.PerfilFragment"
-        android:label="@string/fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
-
+        android:id="@+id/fragment_alumnos_inicio"
+        android:name="com.example.navegacion.fragment_alumnos_inicio"
+        android:label="fragment_alumnos_inicio"
+        tools:layout="@layout/fragment_alumnos_inicio" />
 </navigation>
