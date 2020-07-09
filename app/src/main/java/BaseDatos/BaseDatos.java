@@ -25,7 +25,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         String sQuery7= "CREATE TABLE Curso_profesor  (id INTEGER PRIMARY KEY AUTOINCREMENT, FOREIGN KEY(curso_id)REFERENCES Curso(id), FOREIGN KEY(profesor_id)REFERENCES Profesor(id))";
         String sQuery8= "CREATE TABLE Asignatura_profesor  (id INTEGER PRIMARY KEY AUTOINCREMENT,FOREIGN KEY (asignatura_id)REFERENCES Asignatura(id),FOREIGN KEY (profesor_id)REFERENCES Profesor(id) )";
         String sQuery9= "CREATE TABLE Asignatura_alumno  (id INTEGER PRIMARY KEY AUTOINCREMENT, FOREIGN KEY (asignatura_id)REFERENCES Asignatura(id) ,FOREIGN KEY (alumno_id) REFERENCES Alumno(id))";
-        String sQuery10= "CREATE TABLE Detalle_contenido  (id INTEGER PRIMARY KEY AUTOINCREMENT,formato TEXT,FOREIGN KEY (contenido_id) REFERENCES Contenido(id))";
+
         db.execSQL(sQuery);
         db.execSQL(sQuery2);
         db.execSQL(sQuery3);
@@ -35,7 +35,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         db.execSQL(sQuery7);
         db.execSQL(sQuery8);
         db.execSQL(sQuery9);
-        db.execSQL(sQuery10);
+        db.execSQL("CREATE TABLE Detalle_contenido  (id INTEGER PRIMARY KEY AUTOINCREMENT,formato TEXT,FOREIGN KEY (contenido_id) REFERENCES Contenido(id))");
     }
 
     @Override
