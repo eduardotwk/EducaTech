@@ -3,6 +3,8 @@ package com.example.navegacion;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -20,10 +22,17 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
+Spinner ciclos;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ciclos =  findViewById(R.id.ciclos);
+
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.ciclos,android.R.layout.simple_spinner_item);
+        ciclos.setAdapter(adapter);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -60,4 +69,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
