@@ -32,6 +32,7 @@ Spinner ciclos;
         ciclos =  findViewById(R.id.ciclos);
 
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.ciclos,android.R.layout.simple_spinner_item);
+        ciclos.setAdapter(adapter);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
