@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -63,16 +64,16 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void validarUsuario(String sRut,String sPass){
         //instancia de la clase qeu hereda de SQLiteOpenHelper, llamando al constructor
-        BaseDatos admin = new BaseDatos(this, "educatech", null, 1);
+        BaseDatos admin = new BaseDatos(this, "educatech.db", null, 1);
         //intancia para poder escribir y consuiltar la base de datos
         SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
         String sQuery ="";
         if (rAlumno.isChecked() == true){
             sQuery = "select rut from alumno where rut =" + sRut + " and contrasena =" + sPass;
-        }else if (rProfesor.isChecked() == true){
+
+        }else {
             sQuery = "select rut from profesor where rut =" + sRut + " and contrasena =" + sPass;
         }
-
             Cursor fila = BaseDeDatabase.rawQuery
                     (sQuery, null);
             //solo accedo al primer y unico registro
