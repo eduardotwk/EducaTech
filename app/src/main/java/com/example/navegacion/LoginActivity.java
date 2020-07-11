@@ -35,8 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         if(sRut.isEmpty() && sPass.isEmpty()){
-            sMensaje = String.valueOf(R.string.string_msg_datos);
-            mensajes(sMensaje);
+            Toast.makeText(this, R.string.string_msg_datos, Toast.LENGTH_SHORT).show();
         }else if(sRut.isEmpty()){
             Toast.makeText(this, R.string.string_msg_rut, Toast.LENGTH_SHORT).show();
         }else if(sPass.isEmpty()){
@@ -69,9 +68,9 @@ public class LoginActivity extends AppCompatActivity {
         SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
         String sQuery ="";
         if (rAlumno.isChecked() == true){
-            sQuery = "select rut from Alumno where rut =" + sRut + " and contrasena =" + sPass;
+            sQuery = "select rut from alumno where rut =" + sRut + " and contrasena =" + sPass;
         }else if (rProfesor.isChecked() == true){
-            sQuery = "select rut from Profesor where rut =" + sRut + " and contrasena =" + sPass;
+            sQuery = "select rut from profesor where rut =" + sRut + " and contrasena =" + sPass;
         }
 
             Cursor fila = BaseDeDatabase.rawQuery
@@ -82,10 +81,8 @@ public class LoginActivity extends AppCompatActivity {
                     Intent pantalla2 = new Intent(this, MainActivity.class);
                     startActivity(pantalla2);
                 }else if(rAlumno.isChecked() == true){
-                    String sMensaje = "No existe Alumno";
-                    mensajes(sMensaje);
-                    //Intent pantalla3 = new Intent(this, MainActivity.class);
-                    //startActivity(pantalla3);
+                    Intent pantalla3 = new Intent(this, Main2Activity.class);
+                    startActivity(pantalla3);
                 }
             } else {
                 String sMensaje = "No existe el registro";
