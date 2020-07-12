@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/fragment_profesor_contenido"
         android:name="com.example.navegacion.fragment_profesor_contenido"
-        android:label="fragment_profesor_contenido"
+        android:label="@string/fragment_profesor_contenido"
         tools:layout="@layout/fragment_profesor_contenido" />
 
 </navigation>

@@ -7,11 +7,16 @@
     <fragment
         android:id="@+id/fragment_alumnos_asignaturas"
         android:name="com.example.navegacion.fragment_alumnos_asignaturas"
-        android:label="fragment_alumnos_asignaturas"
+        android:label="@string/fragment_alumnos_asignaturas"
         tools:layout="@layout/fragment_alumnos_asignaturas" />
     <fragment
         android:id="@+id/fragment_alumnos_inicio"
         android:name="com.example.navegacion.fragment_alumnos_inicio"
-        android:label="fragment_alumnos_inicio"
+        android:label="@string/fragment_alumnos_inicio"
         tools:layout="@layout/fragment_alumnos_inicio" />
+    <fragment
+        android:id="@+id/fragment_alumno_perfil"
+        android:name="com.example.navegacion.fragment_alumno_perfil"
+        android:label="@string/fragment_alumno_perfil"
+        tools:layout="@layout/fragment_alumno_perfil" />
 </navigation>
