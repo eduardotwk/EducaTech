@@ -1,6 +1,10 @@
 package com.example.navegacion;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
@@ -18,9 +22,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<Public> extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private SharedPreferences prefs;
 
     private Spinner ciclos;
 
@@ -50,7 +55,11 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        prefs = getSharedPreferences("PREFERENCES", Context.MODE_PRIVATE);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -60,6 +69,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected (MenuItem item) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+
+        switch (item.getItemId()){
+            case R.id.cerrar_sesion:
+                logout();
+                return true;
+            case R.id.cerrar_app:
+                return true;
+            default :
+                    return super.onOptionsItemSelected(item);
+        }
+
+    }
+
+    private void removeSharedPreferences() {
+        prefs.edit().clear().apply();
+    }
+
+    private void logout() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+
+    @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
@@ -67,3 +102,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+
+
