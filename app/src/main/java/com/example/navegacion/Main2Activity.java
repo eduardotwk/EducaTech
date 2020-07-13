@@ -43,7 +43,7 @@ public class Main2Activity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.fragment_alumnos_asignaturas, R.id.fragment_alumnos_inicio)
+                R.id.fragment_alumnos_asignaturas, R.id.fragment_alumnos_inicio,R.id.fragment_alumno_perfil)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -66,20 +66,17 @@ public class Main2Activity extends AppCompatActivity {
             case R.id.cerrar_sesion:
                 logout();
                 return true;
-            case R.id.cerrar_app:
-                return true;
             default :
                 return super.onOptionsItemSelected(item);
         }
 
     }
 
-    private void removeSharedPreferences() {
-        prefs.edit().clear().apply();
-    }
+
 
     private void logout() {
         Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 

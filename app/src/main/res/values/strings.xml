@@ -32,8 +32,8 @@
     <string name="fragment_alumnos_inicio">Inicio</string>
     <string name="fragment_alumno_perfil">Mi perfil</string>
 
-    <string name="cerrar_sesion">cerrar sesion</string>
-    <string name="menu_logout">cerrar sesion</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="menu_logout">Cerrar Sesión</string>
 
 
 </resources>

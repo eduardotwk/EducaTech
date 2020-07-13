@@ -27,7 +27,7 @@ public class MainActivity<Public> extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private SharedPreferences prefs;
 
-    private Spinner ciclos;
+
 
 
     @Override
@@ -49,14 +49,15 @@ public class MainActivity<Public> extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.fragment_profesor_contenido, R.id.asignaturasfragment,R.id.electivoFragment,R.id.agendarPruebaFragment)
+                R.id.fragment_profesor_contenido, R.id.asignaturasfragment,R.id.electivoFragment,
+                R.id.agendarPruebaFragment,R.id.perfilFragment)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        prefs = getSharedPreferences("PREFERENCES", Context.MODE_PRIVATE);
+
     }
 
 
@@ -76,20 +77,15 @@ public class MainActivity<Public> extends AppCompatActivity {
             case R.id.cerrar_sesion:
                 logout();
                 return true;
-            case R.id.cerrar_app:
-                return true;
             default :
                     return super.onOptionsItemSelected(item);
         }
 
     }
 
-    private void removeSharedPreferences() {
-        prefs.edit().clear().apply();
-    }
-
     private void logout() {
         Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 

@@ -1,6 +1,8 @@
 package com.example.navegacion;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -22,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
         eRut = findViewById(R.id.eRut);
         ePassword= findViewById(R.id.ePass);
         rProfesor = findViewById(R.id.rProfesor);
@@ -47,9 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             }else if(sPass.equals(R.string.string_password)){
                 Toast.makeText(this, "Password Incorrecto", Toast.LENGTH_SHORT).show();
             }else{
-                //capturar el check.
-                String check ="";
-                //BASE DE DATOS.
+
                 this.validarUsuario(sRut,sPass);
 
             }
