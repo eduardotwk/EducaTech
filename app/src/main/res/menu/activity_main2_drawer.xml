@@ -16,6 +16,12 @@
             android:id="@+id/fragment_alumno_perfil"
             android:title="Mi Perfil" />
 
+        <item
+            android:id="@+id/fragment_horario_alumno"
+            android:title="Mi Horario" />
+
+
+
 
     </group>
 </menu>

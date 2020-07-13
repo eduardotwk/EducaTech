@@ -31,6 +31,8 @@
     <string name="fragment_alumnos_asignaturas">Mis asignaturas</string>
     <string name="fragment_alumnos_inicio">Inicio</string>
     <string name="fragment_alumno_perfil">Mi perfil</string>
+    <string name="fragment_horario_alumno">Mi Horario</string>
+
 
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="menu_logout">Cerrar Sesión</string>
