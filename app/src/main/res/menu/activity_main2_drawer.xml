@@ -19,6 +19,9 @@
         <item
             android:id="@+id/fragment_horario_alumno"
             android:title="Mi Horario" />
+        <item
+            android:id="@+id/fragmento_tareas_alumno"
+            android:title="Mis Tareas" />
 
 
 

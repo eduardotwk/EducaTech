@@ -30,6 +30,7 @@
     <string name="fragment_alumnos_inicio">Inicio</string>
     <string name="fragment_alumno_perfil">Mi perfil</string>
     <string name="fragment_horario_alumno">Mi Horario</string>
+    <string name="fragment_fragmento_tareas_alumno">Mis Tareas</string>
 
 
     <string name="cerrar_sesion">Cerrar Sesión</string>
