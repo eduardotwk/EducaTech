@@ -15,8 +15,6 @@
 
 
     //MENSAJES STRING LOGIN
-    <string name="string_rut">190753670</string>
-    <string name="string_password">19075367</string>
     <string name="string_msg_datos">Ingrese datos de acceso</string>
     <string name="string_msg_rut">Ingrese Rut</string>
     <string name="string_msg_pass">Ingrese Contraseña</string>

@@ -43,12 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         }else if(sPass.isEmpty()){
             Toast.makeText(this, R.string.string_msg_pass, Toast.LENGTH_SHORT).show();
         }else{
-            if(sRut.equals(R.string.string_rut)){
-                Toast.makeText(this, "Rut Incorrecto", Toast.LENGTH_SHORT).show();
-            }else if(sPass.equals(R.string.string_password)){
-                Toast.makeText(this, "Password Incorrecto", Toast.LENGTH_SHORT).show();
-            }else{
-
                 this.validarUsuario(sRut,sPass);
 
             }
@@ -56,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
 
         }
 
-    }
+
 
     public void mensajes(String mensaje){
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
@@ -90,7 +84,6 @@ public class LoginActivity extends AppCompatActivity {
             }
             //siempre cerrar la conexion al realizar una consulta, existan datos o no
             BaseDeDatabase.close();
-
 
     }
 }
