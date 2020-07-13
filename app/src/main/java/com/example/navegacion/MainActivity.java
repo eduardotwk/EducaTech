@@ -78,6 +78,7 @@ public class MainActivity<Public> extends AppCompatActivity {
                 return true;
             case R.id.cerrar_app:
                 return true;
+            ..
             default :
                     return super.onOptionsItemSelected(item);
         }
